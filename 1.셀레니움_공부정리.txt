@@ -42,6 +42,7 @@ driver = webdriver.Chrome(ChromeDriverManager().install()) #드라이버 실행
 
 #1.접속
 driver.get('https://www.instagram.com/')
+driver.execute_script('window.open("https://naver.com");')                                     #새 탭으로 열기
 time.sleep(3)                                                                                  #로그인하는 사이에 코드가 진행 되기 때문에 잠깐 쉬어주어야 한다
   
 
